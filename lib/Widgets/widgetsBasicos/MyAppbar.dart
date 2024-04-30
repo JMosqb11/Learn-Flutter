@@ -12,7 +12,7 @@ class Myappbar extends StatelessWidget implements PreferredSizeWidget{
         actions: [
           Icon(Icons.notifications, ),
           Icon(Icons.search),
-          Icon(Icons.person),
+          Icon(Icons.image_rounded),
 
           SizedBox(
             width: 20,

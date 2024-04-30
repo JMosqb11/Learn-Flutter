@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:myapp/Widgets/widgetsBasicos/MyAppbar.dart';
-import 'package:myapp/Widgets/widgetsBasicos/MyButton.dart';
-import 'package:myapp/Widgets/widgetsBasicos/MyFloatingActionButton.dart';
+import 'package:myapp/Actividades/ClonGooglePay.dart';
+// import 'package:myapp/Widgets/widgetsBasicos/MyAppbar.dart';
+// import 'package:myapp/Widgets/widgetsBasicos/MyButton.dart';
+// import 'package:myapp/Widgets/widgetsBasicos/MyFloatingActionButton.dart';
 // import 'package:myapp/Widgets/MyIcon.dart';
 // import 'package:myapp/Widgets/MyImage.dart';
 // import 'package:myapp/Widgets/MyRichText.dart';
@@ -19,12 +20,8 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.green,
-      floatingActionButton: Myfloatingactionbutton(),
-      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
-      appBar: Myappbar(),
       body: SafeArea(
-        child: Mybutton(),
+        child: ClonGooglePay(),
       ),
     );
   }

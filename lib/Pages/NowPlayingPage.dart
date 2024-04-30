@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:myapp/Pages/MyHomePage.dart';
+import 'package:myapp/MultiChild/MyColumn.dart';
+import 'package:myapp/MultiChild/MyRow.dart';
+// import 'package:myapp/Pages/MyHomePage.dart';
 
 class NowPlayingPage extends StatefulWidget{
   @override
@@ -11,15 +13,7 @@ class NowplayingpageState extends State<NowPlayingPage>{
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: ElevatedButton(
-          child: const Text("MyHomePage"),
-          onPressed: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(builder: (context) => MyHomePage()),
-            );
-          },
-        ),
+        child: MyRow()
       ),
     );
   }
