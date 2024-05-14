@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:myapp/Pages/NowPlayingPage.dart';
+// import 'package:myapp/ListViewAndGridView/Items/ListTitle.dart';
+import 'package:myapp/Widgets/ListViewAndGridView/MyGridView.dart';
+// import 'package:myapp/ListViewAndGridView/Items/MyCard.dart';
+// import 'package:myapp/ListViewAndGridView/Items/MyContainer.dart';
+// import 'package:myapp/Pages/NowPlayingPage.dart';
 
 class Playlistpage extends StatefulWidget{
   @override
@@ -11,15 +15,7 @@ class PlaylistpageState extends State<Playlistpage>{
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: ElevatedButton(
-          child: const Text("NowPlayingPage"),
-          onPressed: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(builder: (context) => NowPlayingPage()),
-            );
-          },
-        ),
+        child: MyGridView()
       ),
     );
   }

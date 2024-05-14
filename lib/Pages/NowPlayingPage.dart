@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:myapp/MultiChild/MyColumn.dart';
-import 'package:myapp/MultiChild/MyRow.dart';
+import 'package:myapp/Widgets/MultiChild/MyColumn.dart';
+import 'package:myapp/Widgets/MultiChild/MyRow.dart';
 // import 'package:myapp/Pages/MyHomePage.dart';
 
 class NowPlayingPage extends StatefulWidget{

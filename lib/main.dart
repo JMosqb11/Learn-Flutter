@@ -3,7 +3,9 @@ import 'package:google_fonts/google_fonts.dart';
 // import 'package:myapp/Actividades/ClonGooglePay.dart';
 import 'package:myapp/Common/Myroutes.dart';
 import 'package:myapp/Pages/LoginPage.dart';
-import 'package:myapp/Pages/NowPlayingPage.dart';
+// import 'package:myapp/Pages/LoginPage.dart';
+// import 'package:myapp/Pages/NowPlayingPage.dart';
+import 'package:myapp/Pages/PlayListPage.dart';
 // import 'package:myapp/Pages/MyHomePage.dart';
 
 void main() {
@@ -19,13 +21,13 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       onGenerateRoute: Myroutes.generateRoute,
-      initialRoute: ROUTE_NOWPLAYING,
+      initialRoute: ROUTE_LOGIN,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
         textTheme: GoogleFonts.montserratTextTheme(),
       ),
-      home: NowPlayingPage(),
+      home: LoginPage(),
     );
   }
 }
